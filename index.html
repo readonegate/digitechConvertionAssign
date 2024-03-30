@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ridwan Gate</title>
+  </head>
+  <body>
+    <div class="grup">
+      <h1>Digitech University</h1>
+      <img src="/images/digitech.png" />
+      <ul>
+        <li>Ridwan - 20123030</li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div class="header">
+      <h1>Program Konversi</h1>
+    </div>
+      <div class="container">
+        <div>
+          <label for="number-input">Masukan Nilai: </label>
+          <input
+            type="text"
+            placeholder="Masukan Nomor atau Huruf HEX"
+            id="number-input"
+            style="text-transform: uppercase"
+            maxlength="8"
+          />
+        </div>
+        <div>
+          <label for="conversion-type">Pilih Tipe Konversi: </label>
+          <select id="conversion-type">
+            <option value="decimal-to-binary">Decimal ke Binary</option>
+            <option value="decimal-to-octal">Decimal ke octal</option>
+            <option value="decimal-to-hex">Decimal ke Hexadecimal</option>
+            <option value="binary-to-decimal">Binary ke Decimal</option>
+            <option value="binary-to-octal">Binary ke octal</option>
+            <option value="binary-to-hex">Binary ke Hexadecimal</option>
+            <option value="octal-to-decimal">Octal ke Decimal</option>
+            <option value="octal-to-binary">Octal ke Binary</option>
+            <option value="octal-to-hex">Octal ke Hexadecimal</option>
+            <option value="hex-to-decimal">Hexadecimal ke Decimal</option>
+            <option value="hex-to-binary">Hexadecimal ke Binary</option>
+            <option value="hex-to-octal">Hexadecimal ke octal</option>
+          </select>
+        </div>
+        <p id="output"></p>
+        <button onclick="convert()">Konversi</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <div class="marquee">
+      <marquee>CopyRight &copy by Ridwan 2024</marquee>
+  </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
