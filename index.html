@@ -17,8 +17,8 @@
     </div>
     <div class="wrapper">
       <div class="header">
-      <h1>Program Konversi</h1>
-    </div>
+        <h1>Program Konversi</h1>
+      </div>
       <div class="container">
         <div>
           <label for="number-input">Masukan Nilai: </label>
@@ -30,23 +30,25 @@
             maxlength="8"
           />
         </div>
-        <div>
-          <label for="conversion-type">Pilih Tipe Konversi: </label>
-          <select id="conversion-type">
-            <option value="decimal-to-binary">Decimal ke Binary</option>
-            <option value="decimal-to-octal">Decimal ke octal</option>
-            <option value="decimal-to-hex">Decimal ke Hexadecimal</option>
-            <option value="binary-to-decimal">Binary ke Decimal</option>
-            <option value="binary-to-octal">Binary ke octal</option>
-            <option value="binary-to-hex">Binary ke Hexadecimal</option>
-            <option value="octal-to-decimal">Octal ke Decimal</option>
-            <option value="octal-to-binary">Octal ke Binary</option>
-            <option value="octal-to-hex">Octal ke Hexadecimal</option>
-            <option value="hex-to-decimal">Hexadecimal ke Decimal</option>
-            <option value="hex-to-binary">Hexadecimal ke Binary</option>
-            <option value="hex-to-octal">Hexadecimal ke octal</option>
-          </select>
-        </div>
+        <div class="container">
+          <div>
+            <label for="select4">Pilih Konversi: </label>
+            <select id="select4" onchange="ConvertionSelect(this.value, 'select3-1')">
+              <option value="">Pilih Tipe</option>
+              <option value="decimal">Desimal</option>
+              <option value="biner">Biner</option>
+              <option value="octal">Octal</option>
+              <option value="hex">Hex</option>
+            </select>
+          </div>
+          <div>
+            <label for="select3-1">Konversi ke : </label>
+            <select id="select3-1" onchange="addInput(this.value, 'input-form')">
+              <option value="">Pilih Konversi</option>
+            </select>
+          </div>
+       
+
         <p id="output"></p>
         <button onclick="convert()">Konversi</button>
         <button onclick="reset()">Reset</button>
@@ -54,7 +56,8 @@
     </div>
     <div class="marquee">
       <marquee>CopyRight &copy by Ridwan 2024</marquee>
-  </div>
-    <script src="./app.js"></script>
+    </div>
+    <script src="./app.js">
+    </script>
   </body>
 </html>
