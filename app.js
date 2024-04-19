@@ -23,7 +23,7 @@ function convert() {
             }
             break;
         case "decimal-to-binary":
-            if(regex.test(numberInput)){
+            if(!regex.test(numberInput)){
                 result = Number(numberInput).toString(2);
                 basis = '2';
             }else{
@@ -72,7 +72,7 @@ function convert() {
             
             break;
         case "decimal-to-hex":
-            if(regex.test(numberInput)){
+            if(!regex.test(numberInput)){
                 result = Number(numberInput).toString(16).toUpperCase();
                 basis = '16';
             }else{
@@ -95,7 +95,7 @@ function convert() {
             
             break;
         case "decimal-to-octal":
-            if(regex.test(numberInput)){
+            if(!regex.test(numberInput)){
                 result = Number(numberInput).toString(8);
                 basis = '8';
             }else{
