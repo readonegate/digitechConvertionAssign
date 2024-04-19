@@ -19,6 +19,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 dan 0`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "decimal-to-binary":
@@ -29,6 +30,7 @@ function convert() {
                 window.alert(`Hanya angka yang di inputkan`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "binary-to-hex":
@@ -40,6 +42,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 dan 0`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "hex-to-binary":
@@ -51,6 +54,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 - 9 dan huruf A - F`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             
             break;
@@ -63,6 +67,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 - 9 dan huruf A - F`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             
             break;
@@ -74,6 +79,7 @@ function convert() {
                 window.alert(`Hanya angka yang di inputkan`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "hex-to-decimal":
@@ -84,6 +90,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 - 9 dan huruf A - F`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             
             break;
@@ -95,6 +102,7 @@ function convert() {
                 window.alert(`Hanya angka yang di inputkan`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "binary-to-octal":
@@ -106,6 +114,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 dan 0`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "octal-to-binary":
@@ -117,6 +126,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 - 7`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "octal-to-hex":
@@ -128,6 +138,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 - 7`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         case "octal-to-decimal":
@@ -138,6 +149,7 @@ function convert() {
                 window.alert(`angka yang di inputkan hanya 1 - 7`);
                 const element = document.getElementById("output");
                 element.remove();
+                location.reload();
             }
             break;
         default:
@@ -159,7 +171,7 @@ return false;
 function ConvertionSelect(convert, selectId) {
     var select3 = document.getElementById(selectId);
 
-    // Kosongkan select2
+    
     select3.innerHTML = '';
 
     if (convert === 'decimal') {
