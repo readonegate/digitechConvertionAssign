@@ -4,10 +4,12 @@ function convert() {
     let result;
     let basis;
     let regex = /^[A-Za-z]+$/;
+    let regex9 = /^[G-Zg-z]+$/;
     let regex2 = /^[0-1]+$/;
     let regex3 = /^[0-7]+$/;
-    let regex4 = /^[0-9]+[A-Fa-f]+$/;
-    let regex5 = /^[0-9]+$/;
+
+
+
 
 
     switch (conversionType) {
@@ -46,7 +48,7 @@ function convert() {
             }
             break;
         case "hex-to-binary":
-            if(regex4.test(numberInput) || regex5.test(numberInput)){
+            if(!regex9.test(numberInput)){
                 const decimalEquivalent2 = parseInt(numberInput, 16);
                 result = decimalEquivalent2.toString(2);
                 basis = '2';
@@ -59,7 +61,7 @@ function convert() {
             
             break;
         case "hex-to-octal":
-            if(regex4.test(numberInput) || regex5.test(numberInput)){
+            if(!regex9.test(numberInput) ){
                 const decimalEquivalent4 = parseInt(numberInput, 16);
                 result = decimalEquivalent4.toString(8);
                 basis = '8';
@@ -83,7 +85,7 @@ function convert() {
             }
             break;
         case "hex-to-decimal":
-            if(regex4.test(numberInput) || regex5.test(numberInput)){
+            if(!regex9.test(numberInput)){
                 result = parseInt(numberInput, 16);
                 basis = '10';
             }else{
